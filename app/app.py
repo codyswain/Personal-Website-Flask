@@ -1,10 +1,10 @@
-from flask import Flask
+from flask import Flask, render_template
 from datetime import datetime
 app = Flask(__name__)
 
 @app.route('/')
-def homepage():
-	return 'homepage.html'
+def homepage(test_variable=None):
+	return render_template("homepage.html", test_variable=test_variable)
     # the_time = datetime.now().strftime("%A, %d %b %Y %l:%M %p")
 
     # return """
