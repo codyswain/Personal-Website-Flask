@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def homepage():
-	return 'homepage.html'
+	return 'app/homepage.html'
     # the_time = datetime.now().strftime("%A, %d %b %Y %l:%M %p")
 
     # return """
