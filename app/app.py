@@ -3,16 +3,21 @@ from datetime import datetime
 app = Flask(__name__)
 
 @app.route('/')
-def homepage():
+def index():
 	return render_template("index.html")
-    # the_time = datetime.now().strftime("%A, %d %b %Y %l:%M %p")
+    
+@app.route('/projects')
+def projects():
+	return render_template("projects.html")
 
-    # return """
-    # <h1>Hello heroku</h1>
-    # <p>It is currently {time}.</p>
+@app.route('/notes')
+def notes():
+	return render_template("notes.html")
 
-    # <img src="http://loremflickr.com/600/400">
-    # """.format(time=the_time)
+@app.route('/about')
+def about():
+	return render_template("about.html")
+
 
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)

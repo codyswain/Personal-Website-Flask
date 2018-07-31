@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Personal Website</title>
+
+	<!-- Website Scales to device width-->
+	<meta name="viewport" content="wdith=device-wdith, initial-scale=1">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">Personal Website</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a href="{{ url_for('index') }}" class="nav-item nav-link" href="#">Home </a>
+				<a href="{{ url_for('projects') }}" class="nav-item nav-link" href="#">Projects</a>
+				<a href="{{ url_for('notes') }}" class="nav-item nav-link" href="#">My Notes</a>
+				<a href="{{ url_for('about') }}" class="nav-item nav-link" href="#">About Me</a>
+				<!-- <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
+			</div>
+		</div>
+	</nav>
+</head>
+
+<body>
+	<!-- Jinja template placeholder -->
+	{% block content %}
+	{% endblock %}
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
