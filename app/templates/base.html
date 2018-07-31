@@ -3,7 +3,7 @@
 
 <head>
 	<title>Cody Swain</title>
-	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+	<link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
 
 	<!-- Website Scales to device width-->
 	<meta name="viewport" content="width=device-wdith, initial-scale=1">
@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
 
 	<!-- Custom CSS -->
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='custom.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/custom.css') }}">
 
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<a class="navbar-brand" href="#">Personal Website</a>
@@ -24,7 +24,7 @@
 				<a href="{{ url_for('index') }}" class="nav-item nav-link" href="#">Home </a>
 				<a href="{{ url_for('projects') }}" class="nav-item nav-link" href="#">Projects</a>
 				<a href="{{ url_for('notes') }}" class="nav-item nav-link" href="#">My Notes</a>
-				<a href="{{ url_for('about') }}" class="nav-item nav-link" href="#">About Me</a>
+				<a href="{{ url_for('about') }}" class="nav-item nav-link" href="#"">About Me</a>
 				<!-- <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
 			</div>
 		</div>
