@@ -9,6 +9,10 @@
 	height: auto;
 }
 
+.project_boxes {
+	/*background: linear-gradient(-90deg, rgba(69,246,249,.4), rgba(216, 143, 247, .4));*/
+	border:2px solid grey;
+}
 
 
 /* Social Media Buttons */
