@@ -57,5 +57,11 @@ def notes_mistakes_list():
 def notes_company_applications_list():
 	return render_template("notes_company_applications_list.html")
 
+
+''' Project pages '''
+@app.route('/projects_3d_printer')
+def projects_3d_printer():
+	return render_template("projects_3d_printer.html")
+
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)
