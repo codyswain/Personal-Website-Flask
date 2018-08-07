@@ -18,9 +18,29 @@
 }
 
 
+.button-picture {
+  margin-top:10px;
+  height:250px;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  max-width:89%;
+}
+.button-picture:hover {
+  color: lightsalmon;
+}
+
+
 .project_boxes {
 	/*background: linear-gradient(-90deg, rgba(69,246,249,.4), rgba(216, 143, 247, .4));*/
-	border:2px solid grey;
+  height: 280px;
+  border:1px solid grey;
+  transition: transform .2s;
+}
+
+.project_boxes:hover {
+  transform: scale(1.04);
+  opacity: .95;
 }
 
 
