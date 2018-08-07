@@ -19,17 +19,17 @@
 
 
 .button-picture {
-  margin-top:10px;
-  height:250px;
+  margin-top:15px;
+  height:240px;
   display: block;
   margin-left:auto;
   margin-right:auto;
   max-width:89%;
 }
+
 .button-picture:hover {
   color: lightsalmon;
 }
-
 
 .project_boxes {
 	/*background: linear-gradient(-90deg, rgba(69,246,249,.4), rgba(216, 143, 247, .4));*/
