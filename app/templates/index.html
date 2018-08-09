@@ -1,34 +1,92 @@
 {% extends "base.html" %}
-
 {% block content %}
 
-<body style="background: radial-gradient(#c6c6c6, #f2f2f2, #ffffff);">
+<head>
+<!-- CSS for Timeline -->
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/timeline.css') }}">
+
+<!-- Javascript for Timeline-->
+<script src="{{ url_for('static', filename='js/timeline.js') }}"></script>
+</head>
+
+
 
 <div class="container-fluid">
 	<div class="row row mt-5">
 		<div class="col-sm-2"></div>
 			<div class="col-lg">
-				<h1 class="display-5">Website under development. Head over to <a href="{{ url_for('projects') }}">projects</a>, or check back for updates!</h1><br><br>
+				<div class"row">
+					<h1 class="display-4">Website under development. Head over to <a href="{{ url_for('projects') }}">projects</a>, or check back for updates!</h1><br><br>
+				</div>
 
-				<h1 class="display-5">To do</h1>
-				1. Add projects <br>
-				2. Notes on Kalman Filters <br>
-				3. Fix 3D Printer <br>
-				4. Notes of CNN's <br>
-				5. Design CAD for robotic arm <br>
-				6. Understanding Singular Value Decomposition <br> <br>
+				<div class="row rounded intro">
+					Timeline
+				</div>
 
-
-				<h1 class="display-5">Projects to add</h1>
-				- 3D Printer<br>
-				- Homemade Rocket Fuel<br>
-				- Force Measurement Python Gui<br>
-				- Ion Thruster<br>
-				- Robotic Arm (WIP) <br>
-				- Coil Gun (WIP) <br>
-				- Music Production (WIP)<br>
-				- Hot Hand Fallacy (WIP) <br>
-				- TimeSpent (WIP) <br>
+				<section class="timeline">
+				  <ul>
+				    <li>
+				      <div>
+				        <time>1934</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+				      </div>
+				    </li>
+				    <li>
+				      <div>
+				        <time>1937</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
+				      </div>
+				    </li>
+				    <li>
+				      <div>
+				        <time>1940</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
+				      </div>
+				    </li>
+				    <li>
+				      <div>
+				        <time>1943</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+				      </div>
+				    </li>
+				    <li>
+				      <div>
+				        <time>1946</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+				      </div>
+				    </li>
+				    <li>
+				      <div>
+				        <time>1956</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+				      </div>
+				    </li>
+				    <li>
+				      <div>
+				        <time>1957</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+				      </div>
+				    </li>
+				    <li>
+				      <div>
+				        <time>1967</time> Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus, euismod quis ante.
+				      </div>
+				    </li>
+				    <li>
+				      <div>
+				        <time>1977</time> Vestibulum porttitor lorem sed pharetra dignissim. Nulla maximus, dui a tristique iaculis, quam dolor convallis enim, non dignissim ligula ipsum a turpis.
+				      </div>
+				    </li>
+				    <li>
+				      <div>
+				        <time>1985</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+				      </div>
+				    </li>
+				    <li>
+				      <div>
+				        <time>2000</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+				      </div>
+				    </li>
+				    <li>
+				      <div>
+				        <time>2005</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+				      </div>
+				    </li>
+				  </ul>
+				</section>
 			</div>
 		<div class="col-sm-2"></div>
 	</div>
@@ -38,3 +96,24 @@
 </html>
 
 {% endblock %}
+
+
+<!-- <h1 class="display-5">To do</h1>
+1. Add projects <br>
+2. Notes on Kalman Filters <br>
+3. Fix 3D Printer <br>
+4. Notes of CNN's <br>
+5. Design CAD for robotic arm <br>
+6. Understanding Singular Value Decomposition <br> <br>
+
+
+<h1 class="display-5">Projects to add</h1>
+- 3D Printer<br>
+- Homemade Rocket Fuel<br>
+- Force Measurement Python Gui<br>
+- Ion Thruster<br>
+- Robotic Arm (WIP) <br>
+- Coil Gun (WIP) <br>
+- Music Production (WIP)<br>
+- Hot Hand Fallacy (WIP) <br>
+- TimeSpent (WIP) <br> -->
