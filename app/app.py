@@ -3,6 +3,7 @@ from datetime import datetime
 app = Flask(__name__)
 # app = Flask(__name__, static_url_path='/static')
 
+''' Main pages ''' 
 @app.route('/')
 def index():
 	return render_template("index.html")
@@ -20,7 +21,7 @@ def about():
 	return render_template("about.html")
 
 
-''' Here are the note pages '''
+''' Notes pages '''
 @app.route('/notes_schedule')
 def notes_schedule():
 	return render_template("notes_schedule.html")
@@ -62,6 +63,26 @@ def notes_company_applications_list():
 @app.route('/projects_3d_printer')
 def projects_3d_printer():
 	return render_template("projects_3d_printer.html")
+
+@app.route('/projects_ion_thruster')
+def projects_ion_thruster():
+	return render_template("projects_ion_thruster.html")
+
+@app.route('/projects_robotic_arm')
+def projects_robotic_arm():
+	return render_template("projects_robotic_arm.html")
+
+@app.route('/projects_timespent')
+def projects_timespent():
+	return render_template("projects_timespent.html")
+
+@app.route('/projects_machine_learning')
+def projects_machine_learning():
+	return render_template("projects_machine_learning.html")
+
+@app.route('/projects_ios_dev')
+def projects_ios_dev():
+	return render_template("projects_ios_dev.html")
 
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)
