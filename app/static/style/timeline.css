@@ -20,7 +20,7 @@ body {
 -------------------------------------------------- */
 .intro {
 	font-family: "Segoe UI", "Helvetica Neue", sans-serif;
-	font-size: 5rem;
+	font-size: 3rem;
 	font-weight: 300;
 	color: black;
 
@@ -106,8 +106,9 @@ body {
 
 time {
   display: block;
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 200;
   margin-bottom: 8px;
 }
 

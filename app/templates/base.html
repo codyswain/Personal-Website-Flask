@@ -11,16 +11,13 @@
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
 
-	<!-- Font Awesome for social media buttons-->
+	<!-- Social Media Buttons CSS-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/custom.css') }}">
 
-	<!-- <nav class="navbar navbar-expand-lg navbar-light"  style="background: linear-gradient(-90deg, #aa0197, #ffffff)"> -->
-	<!-- <nav class="navbar navbar-expand-lg navbar-light"  style="background: white"> -->
 	<nav class="navbar navbar-expand-lg navbar-light"  style="background: linear-gradient(-45deg, rgba(183, 9, 90, 1), rgba(45, 216, 255, .6))">		
-		<!-- <a class="navbar-brand" href="{{ url_for('index') }}">Personal Website</a> -->
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -30,22 +27,17 @@
 				<a href="{{ url_for('projects') }}" class="nav-item nav-link" href="#">Projects</a>
 				<a href="{{ url_for('notes') }}" class="nav-item nav-link" href="#">Notes</a>
 				<a href="{{ url_for('about') }}" class="nav-item nav-link" href="#"">About</a>
-				<!-- <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
 			</div>
 		</div>
 	</nav>
 </head>
-
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="{{ url_for('static', filename='js/button.js') }}"></script>
 
+{% block content %}
+{% endblock %}
 
-<body>
-	<!-- Jinja template placeholder -->
-	{% block content %}
-	{% endblock %}
-</body>
 </html>
