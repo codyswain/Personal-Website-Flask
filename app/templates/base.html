@@ -17,13 +17,13 @@
 	<!-- Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/custom.css') }}">
 
-	<nav class="navbar navbar-expand-lg navbar-light"  style="background: linear-gradient(-45deg, rgba(183, 9, 90, 1), rgba(45, 216, 255, .6))">		
+	<nav class="navbar navbar-expand-lg navbar-light"  style="background: linear-gradient(-45deg, rgba(183, 9, 90, 1), rgba(45, 216, 255, .6))">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 			<div class="navbar-nav">
-				<a href="{{ url_for('index') }}" class="nav-item nav-link" href="#">Personal Website </a>
+				<a href="{{ url_for('projects') }}" class="nav-item nav-link" href="#">Personal Website </a>
 				<a href="{{ url_for('projects') }}" class="nav-item nav-link" href="#">Projects</a>
 				<a href="{{ url_for('notes') }}" class="nav-item nav-link" href="#">Notes</a>
 				<a href="{{ url_for('about') }}" class="nav-item nav-link" href="#"">About</a>

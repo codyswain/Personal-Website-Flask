@@ -3,11 +3,8 @@ from datetime import datetime
 app = Flask(__name__)
 # app = Flask(__name__, static_url_path='/static')
 
-''' Main pages ''' 
+''' Main pages '''
 @app.route('/')
-def index():
-	return render_template("index.html")
-    
 @app.route('/projects')
 def projects():
 	return render_template("projects.html")
