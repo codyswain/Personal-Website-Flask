@@ -69,9 +69,9 @@ def projects_ion_thruster():
 def projects_robotic_arm():
 	return render_template("projects_robotic_arm.html")
 
-@app.route('/projects_timespent')
-def projects_timespent():
-	return render_template("projects_timespent.html")
+@app.route('/projects_looseroots')
+def projects_looseroots():
+	return render_template("projects_looseroots.html")
 
 @app.route('/projects_machine_learning')
 def projects_machine_learning():
