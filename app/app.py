@@ -54,7 +54,7 @@ def notes_mistakes_list():
 @app.route('/notes_company_applications_list')
 def notes_company_applications_list():
 	return render_template("notes_company_applications_list.html")
-
+	
 
 ''' Project pages '''
 @app.route('/projects_3d_printer')
