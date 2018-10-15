@@ -13,11 +13,13 @@
   display: block;
   /*margin-left:auto;
   margin-right:auto;*/
-  image-orientation: from-image;
   max-width: 100%;
   height: auto;
 }
 
+img {
+    image-orientation: from-image;
+}
 
 /* Social Media Buttons */
 .fa {
